@@ -1,7 +1,8 @@
-from math import pow
+"""TestPow"""
 
 
 def wrapper(arg1, arg2):
+    """CalculatePow"""
     if not(isinstance(arg1, (int, float)) and isinstance(arg2, (int, float))):
         msg = "must be int or float, given " + str(type(arg1))
         raise TypeError(msg)
